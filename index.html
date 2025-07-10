@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Asnan's Blogfolio - CS Student & MERN Developer</title>
+        <meta name="description" content="Welcome to Asnan's blogfolio! CS student graduating in 2026, building pain-relieving projects with MERN stack. Blogs, projects, and more.">
+        <meta name="keywords" content="Asnan, Computer Science, MERN Stack, Web Development, Blog, Portfolio">
+        <meta name="author" content="Asnan">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="blogfolio.js" defer></script>
+
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="#home">asnan</a>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#blogs" class="nav-link">blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link">projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#terminal" class="nav-link">terminal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">contact</a>
+                    </li>
+                </ul>
+                <div class="nav-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+
+        <div class="theme-toggle">
+            <button id="theme-toggle-btn" class="toggle-btn">
+                <span class="toggle-icon">🌙</span>
+            </button>
+        </div>
+
+        <main class="main-content">
+            <section id="home">
+                <h1>asnan's blogfolio.</h1>
+            </section>
+            
+            <section id="about">
+                <h2>a little about me.</h2>
+                <p>hiiii!! welcome to my blogfolio! this is asnan here, i am dumping here all my blogs,projects and stuff which interests me. i am currently studying cs and will graduate in 2026. my current goal is to build pain relieving projects through utilisinng MERN tech stacks.</p>
+            </section>
+
+            <section id="blogs">
+                <h2>blogs.</h2>
+                <ul>
+                <li><a href="#" onclick="alert('Blog post coming soon!')">[9/july/25] your attention is precious.</a></li>
+                <li><a href="#" onclick="alert('Blog post coming soon!')">[10/july/25] time is your master.</a></li>
+                </ul>
+                <p class="blog-note">📝 More blog posts coming soon! Follow me on social media for updates.</p>
+            </section>
+
+            <section id="projects">
+                <h2>what am i working on?</h2>
+                <div class="project-grid">
+                    <div class="project-item">
+                        <h3>🌟 Current Learning</h3>
+                        <p>MERN Stack Development - Building full-stack applications with MongoDB, Express.js, React, and Node.js</p>
+                    </div>
+                    <div class="project-item">
+                        <h3>💭 Baseerah - Dream Log</h3>
+                        <p>A personal project to track and analyze dreams using modern web technologies(currently building)</p>
+                        <p><a href="https://github.com/Asnan07/baseerah.ai" target="_blank" rel="noopener noreferrer">🔗 View on GitHub</a></p>
+                    </div>
+                    <div class="project-item">
+                        <h3>🎯 Goal</h3>
+                        <p>Creating pain-relieving projects that make people's lives easier and more efficient</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <h2>contact.</h2>
+                <ul>
+                <li>🐦 connect with me on twitter/x at <a href="https://x.com/l0n3d3v" target="_blank">@l0n3d3v</a></li>
+                <li>💼 connect with me on linkedin at <a href="https://www.linkedin.com/in/l0n3d3v" target="_blank" title="go to linkedin">asnan</a></li>
+                <li>📧 you can mail me directly at <a href="mailto:asnan0130@gmail.com">asnan0130@gmail.com</a></li>
+                </ul>
+            </section>
+
+            <section id="terminal">
+                <h2>interactive terminal.</h2>
+                <div class="terminal-container">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <span class="btn-close"></span>
+                            <span class="btn-minimize"></span>
+                            <span class="btn-maximize"></span>
+                        </div>
+                        <div class="terminal-title">asnan@blogfolio:~$</div>
+                    </div>
+                    <div class="terminal-body">
+                        <div id="terminal-output">
+                            <div class="terminal-line">
+                                <span class="prompt">asnan@blogfolio:~$</span> <span class="command">peace be upon you! welcome to my interactive terminal!</span>
+                            </div>
+                            <div class="terminal-line">
+                                <span class="output">Type 'whatnow' to see available commands</span>
+                            </div>
+                        </div>
+                        <div class="terminal-input-line">
+                            <span class="prompt">asnan@blogfolio:~$</span>
+                            <div class="input-container">
+                                <span id="input-display" class="input-text"></span>
+                                <span class="cursor"></span>
+                            </div>
+                            <input type="text" id="terminal-input" class="terminal-input-hidden" autocomplete="off" autofocus>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <p>&copy; 2025 Asnan. Built with 💜 and lots of ☕</p>
+                <p class="view-counter">👀 Unique Visitors: <span id="view-count">0</span></p>
+            </footer>
+        </main>
+    </body>
+</html>
